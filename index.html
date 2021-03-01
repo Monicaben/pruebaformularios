@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    
+
+    <title>Document</title>
+
+</head>
+<body>
+    <section>
+        
+        <form action="web.php" method="GET">
+         
+        ++text++
+        <P>Nombre <input type="text" name="nom" id="nom"></p>
+        <p>Apellidos <input type="text" name="cognoms" id="cognoms"></p>
+
+        <p>Password <input type= "password" name="pass" id="pass"></p>
+
+        ++hidden es oculto++
+        <input type="hidden" name="id" id="id">
+
+        ++numeros++
+        <p>Número <input type="number" name="numero"></p>
+        <p>Número <input type="number" step="any" name="numero"> ++números decimales++</p>
+        <p>Número <input type="number" step="10" name="numero_d10"> ++números de 10 en 10++</p>
+        <p>Número <input type="number" min="10" name="numero_min"> ++valor mínimo++</p>
+        <p>Número <input type="number" max="20" name="numero_max">++ valor máximo++</p>
+
+        <p>Busqueda <input type="search" id="busqueda">
+        Teléfono <input type="telf" id="telefono">
+        Url <input type="url" id="web">
+        e-mail <input type="email" id="email">
+        Fecha <input type="date" id="fecha">
+        Mes <input type="month" id="mes">
+        Semana <input type="week" id="semana">
+        Hora <input type="time" id="hora"></p>
+        
+
+        
+
+        ++cajas=checkbox++
+        <p><input type="checkbox" name="check">Checkbox</p>
+
+        ++checked=marcada++
+        <p><input type="checkbox" name="check" checked>Checkbox</p> 
+
+        <p><input type="checkbox" name="bici" value="bici">Bici
+        <input type="checkbox" name="coche" 
+        
+        value="coche">Bici
+        <input type="checkbox" name="moto" value="moto">Moto</p>
+        
+        ++radio=circulo++ name igual para todo 
+        <p><input type="radio" name="color" value="rojo" checked>Rojo
+            <input type="radio" name="color" value="verde"> Verde
+            <input type="radio" name="color" value="amarillo">Amarillo</p>
+            <input type="submit" value="Enviar">   
+            
+        ++color++
+        <P>Color <input type="color" name="mycolour"> 
+         Color <input type="color" name="mycolour" value="#0000ff"></P>
+
+         ++range++  step=aumento    ++++esto necesita script en head???????
+         <p>Que nota tienes <input type="range" id="rango" min="5" max="10" step="1"></p>
+        <p>Nota: <span id="nota"></span></p>
+        
+        
+        ++file=te manda a explorador++  no se pone value++
+        <p>Archivo <input type="file" name="archivo"></p>
+        </form>
+
+        ++textarea=caja con texto++ placeholder=borra texto incluido++
+        <p><textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea></p>
+       
+        ++select=opciones menu
+        <select name="menu">
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3" selected>Tres</option> ++selected=marcado
+          </select>
+
+      ++botones++
+         <p><input type="submit" value="Enviar">
+          <input type="button" value="púlsame">
+          <input type="reset" value="reset"></p>
+  
+    </section>
+    
+</body>
+</html>
